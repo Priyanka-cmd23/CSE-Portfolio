@@ -1,0 +1,46 @@
+name: Daily Activity
+
+on:
+  schedule:
+    # Runs every day at 10:00 AM and 8:00 PM IST
+    - cron: '0 4:30,15:00 * * *'
+  workflow_dispatch:  # Allow manual trigger
+
+jobs:
+  update-activity:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    
+    steps:
+    - name: Checkout repo
+      uses: actions/checkout@v4
+      
+    - name: Generate daily activity
+      run: |
+        date=$(date '+%Y-%m-%d %H:%M:%S')
+        echo "## Daily Update - $date" >> Resources/daily-log.md
+        echo "" >> Resources/daily-log.md
+        echo "Today I worked on:" >> Resources/daily-log.md
+        echo "- DSA practice" >> Resources/daily-log.md
+        echo "- Learning new concepts" >> Resources/daily-log.md
+        echo "" >> Resources/daily-log.md
+        echo "---" >> Resources/daily-log.md
+        echo "" >> Resources/daily-log.md
+    
+    - name: Update progress tracker
+      run: |
+        date=$(date '+%Y-%m-%d')
+        echo "## Progress Tracker" > Resources/progress.md
+        echo "" >> Resources/progress.md
+        echo "| Date | Topic | Status |" >> Resources/progress.md
+        echo "|------|-------|--------|" >> Resources/progress.md
+        echo "| $date | Daily Practice | ✅ |" >> Resources/progress.md
+    
+    - name: Commit and push
+      run: |
+        git config --global user.name "Priyanka-cmd23"
+        git config --global user.email "radhikasax22@gmail.com"
+        git add .
+        git commit -m "Daily update: $(date '+%Y-%m-%d')" || echo "No changes to commit"
+        git push
