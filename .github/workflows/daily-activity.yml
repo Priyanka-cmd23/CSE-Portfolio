@@ -2,8 +2,8 @@ name: Daily Activity
 
 on:
   schedule:
-    # Runs every day at 10:00 AM and 8:00 PM IST
-    - cron: '0 4:30,15:00 * * *'
+    # Runs every day at 10:00 AM and 8:00 PM IST (UTC)
+    - cron: '30 4,14 * * *'
   workflow_dispatch:  # Allow manual trigger
 
 jobs:
