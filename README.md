@@ -6,14 +6,14 @@ B.Tech CSE | Developer | Learner**
 
 ## 📂 Repository Structure
 
-├── Data-Structures/       # Array, Linked List, Trees, Graphs, etc.
-├── Algorithms/            # Sorting, Searching, DP, Greedy, etc.
-├── Mini-Projects/         # Small CSE mini projects
-├── Python-Projects/       # Python practice & projects
-├── Operating-Systems/     # OS concepts & simulations
-├── DBMS/                  # Database queries & designs
-├── Web-Dev/               # HTML, CSS, JS, React basics
-└── Resources/             # Study notes & references
+├── Data-Structures/        # Array, Linked List, Trees, Graphs, etc.
+├── Algorithms/             # Sorting, Searching, DP, Greedy, etc.
+├── Mini-Projects/          # Small CSE mini projects
+├── Python-Projects/        # Python practice & projects
+├── Operating-Systems/      # OS concepts & simulations
+├── DBMS/                   # Database queries & designs
+├── Web-Dev/                # HTML, CSS, JS, React basics
+└── Resources/              # Study notes & references
 
 ## 📊 Stats
 
