@@ -1,12 +1,11 @@
 # Priyanka's CSE Portfolio 🚀
 
-**B.Tech CSE | Developer | Learner**
+B.Tech CSE | Developer | Learner**
 
 ---
 
 ## 📂 Repository Structure
 
-```
 ├── Data-Structures/       # Array, Linked List, Trees, Graphs, etc.
 ├── Algorithms/            # Sorting, Searching, DP, Greedy, etc.
 ├── Mini-Projects/         # Small CSE mini projects
@@ -15,7 +14,6 @@
 ├── DBMS/                  # Database queries & designs
 ├── Web-Dev/               # HTML, CSS, JS, React basics
 └── Resources/             # Study notes & references
-```
 
 ## 📊 Stats
 
@@ -27,10 +25,7 @@
 
 ## 🛠️ Skills
 
-**Languages:** C, C++, Java, Python, JavaScript, HTML, CSS  
+**Languages:** C, C++, Java, Python, JavaScript, TypeScript, HTML, CSS  
 **Tools:** Git, VS Code, Linux, MySQL  
 **Learning:** DSA, Web Development, Machine Learning
 
----
-
-*Daily updates powered by GitHub Actions*
